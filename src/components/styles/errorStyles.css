@@ -1,0 +1,46 @@
+.error_layout {
+    display: flex;
+    justify-content: center;
+}
+
+.error_container {
+    background-color: red;
+    height: 50vh;
+    width: 24vw;
+    border-radius: 12px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repat(4, 1fr);
+}
+
+.error_code {
+    grid-row: 1 / 1;
+    font-size: 5vh;
+    height: 0vh;
+
+}
+
+.error_image {
+    grid-row: 2 / 2;
+    width: 20vh;
+    justify-self: center;
+    border-radius: 50%;
+    background-color: bisque;
+}
+
+.error_message {
+    grid-row: 3 / 3;
+    font-size: 15px;
+    height: 1vh;
+    text-transform: capitalize;
+}
+
+.error_button {
+    grid-row: 4 / 4;
+    border-radius: 7px;
+    outline: none;
+    width: 15vw;
+    height: 4vh;
+    justify-self: center;
+    font-weight: 900;
+}
