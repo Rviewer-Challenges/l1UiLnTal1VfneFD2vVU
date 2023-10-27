@@ -6,8 +6,8 @@ const GenericError = ({ setErrorWindow, err }) => {
 
   const { message, code } = err.getError()[0]
 
-  let o = Object.values(message);
-  let l = code
+  let errMessage = Object.values(message);
+  let codeMessage = code
 
 
   return (
@@ -16,11 +16,11 @@ const GenericError = ({ setErrorWindow, err }) => {
 
         <div className='error_container'>
 
-          <p className='error_code'> { l }</p>
+          <p className='error_code'> { errMessage }</p>
 
           <img className='error_image' src={errorImage} />
 
-          <p className='error_message'> { o } </p>
+          <p className='error_message'> { codeMessage } </p>
 
           <button
             className='error_button'

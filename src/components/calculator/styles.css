@@ -1,1 +1,21 @@
-    
+.calculator-input {
+    height: 3vh;
+    width: 18vw;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.calculator-select {
+    width: 17vw;
+    height: 3vh;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.calculator-button {
+    width: 14vw;
+    height: 4vh;
+    border-radius: 12px;
+    font-size: 26px;
+    font-weight: bold;
+}
